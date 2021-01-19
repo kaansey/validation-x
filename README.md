@@ -4,6 +4,47 @@
 
 Simple chain validator for string, number, date input
 
+## Demo
+
+https://codesandbox.io/s/validation-x-demo-dejio
+
+## Installation
+
+Add `validation-x` dependency
+
+```bash
+yarn add validation-x
+npm install validation-x --save
+```
+
+### Usage
+
+```js
+import useLocalStorage from 'validation-x'
+```
+
+```js
+const schema = {
+  name: validation
+    .string()
+    .min(5, "input lenght should be minimum 5")
+    .lowercase("input shoudl be lowercase eeror")
+    .matches(/[a-z]+\d+/, "input should match with /[a-z]+.d+/ "),
+  age: validation
+    .number()
+    .min(10, "min error - age should be 10")
+    .max(40, "max error - age can be maximum 40")
+    .custom((val) => val % 2 === 0, "custom error")
+};
+
+
+const validateName = schema.name.validate('test123');
+const nameValidationErrors = schema.name.errors // []
+
+const validateage = schema.age.validate(5);
+const ageValidationErrors = schema.age.errors // ["min error - age should be 10", "custom error"]
+```
+
 ## String Validation
 
 ### Options
@@ -49,7 +90,6 @@ Simple chain validator for string, number, date input
 
 This project is licensed under the MIT License - see the
 [LICENCE.md](./LICENCE.md) file for details
-
 
 [npm-download-count]: https://img.shields.io/npm/dm/validation-x
 [npm-bundle-size]: https://img.shields.io/bundlephobia/min/validation-x
