@@ -1,11 +1,11 @@
 {
-  "name": "x-validation",
-  "version": "0.0.1",
+  "name": "validation-x",
+  "version": "0.0.2",
   "author": "Kaan Seyitogullari",
-  "homepage": "https://github.com/kaansey/x-validation",
+  "homepage": "https://github.com/kaansey/validation-x",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaansey/x-validation"
+    "url": "https://github.com/kaansey/validation-x"
   },
   "keywords": [
     "validation",

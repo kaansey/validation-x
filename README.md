@@ -1,4 +1,6 @@
-# x-validation
+# validation-x
+
+[![npm package][npm-badge]][npm] ![npm-bundle-size] ![Module formats][module-formats] ![npm-download-count]
 
 Simple chain validator for string, number, date input
 
@@ -47,3 +49,10 @@ Simple chain validator for string, number, date input
 
 This project is licensed under the MIT License - see the
 [LICENCE.md](./LICENCE.md) file for details
+
+
+[npm-download-count]: https://img.shields.io/npm/dm/validation-x
+[npm-bundle-size]: https://img.shields.io/bundlephobia/min/validation-x
+[npm-badge]: https://img.shields.io/npm/v/validation-x?style=flat-square
+[npm]: https://www.npmjs.com/package/validation-x
+[module-formats]: https://img.shields.io/badge/module%20formats-cjs%2C%20esm-green.svg?style=flat-square
