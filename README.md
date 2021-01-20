@@ -20,7 +20,7 @@ npm install validation-x --save
 ### Usage
 
 ```js
-import useLocalStorage from 'validation-x'
+import validation from 'validation-x'
 ```
 
 ```js
